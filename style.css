@@ -1,0 +1,25 @@
+#score{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    width: 600px;
+    background-color: thistle;
+    border-color: black;
+    border-style: solid;
+    padding: 10px;
+}
+
+.player-score{
+    border: solid;
+    border-color: white;
+    text-align: center;
+    padding: 10px;
+    height: 100px;
+}
+
+.computer-score{
+    border: solid;
+    border-color: white;
+    text-align: center;
+    padding: 10px;
+    height: 100px;
+}
