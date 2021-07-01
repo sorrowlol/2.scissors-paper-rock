@@ -66,22 +66,26 @@ function round(playerSelection, computerSelection){
             playersc.textContent = playerwin;
         }
         else if (computerSelection === "Scissors"){
-            console.log(`It's a draw! Both chose ${computerSelection}`);
+            disply.textContent = `It's a draw! Both chose ${computerSelection}`;
         }
     }
     
        if (computerwin === 5){
         cret.textContent = `Machines always win, with ${computerwin} vs your measly ${playerwin}`;
         winner.appendChild(cret);
-        computerwin = 0;
         playerwin = 0;
+        computerwin = 0;
+        computersc.textContent = 0;
+        playersc.textContent = 0;
     }
     
     else if (playerwin === 5){
         cret.textContent = `You win! with ${playerwin} vs the stupid machines ${computerwin}`;
         winner.appendChild(cret);
-        computerwin = 0;
         playerwin = 0;
+        computerwin = 0;
+        computersc.textContent = 0;
+        playersc.textContent = 0;
     }
 
 }
