@@ -1,3 +1,20 @@
+html, body{
+    background-color: black;
+}
+
+.header{
+    text-align: center;
+    font-family: 'Press Start 2P';
+    color: white;
+}
+
+#player-choice{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    margin-left: -120px;
+}
+
 #score{
     display: grid;
     grid-template-columns: repeat(2, 300px);
@@ -6,6 +23,28 @@
     border-color: black;
     border-style: solid;
     padding: 10px;
+}
+
+#results{
+    color: white;
+    font-family: 'Press Start 2P';
+    text-align: center;
+}
+
+
+#scissors{
+    filter: invert(55%) sepia(43%) saturate(1991%) hue-rotate(109deg) brightness(96%) contrast(101%);
+    margin-top: 10px;
+}
+
+#paper{
+    filter: invert(20%) sepia(97%) saturate(7180%) hue-rotate(330deg) brightness(102%) contrast(106%);
+}
+
+#rock{
+    filter: invert(44%) sepia(92%) saturate(1050%) hue-rotate(189deg) brightness(101%) contrast(101%);
+    margin-left: 90px;
+    margin-top: 20px;
 }
 
 .player-score{
