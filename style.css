@@ -6,13 +6,14 @@ html, body{
     text-align: center;
     font-family: 'Press Start 2P';
     color: white;
+    font-size: 36px;
+    padding: 20px;
 }
 
 #player-choice{
     display: flex;
     justify-content: center;
-    margin-top: 150px;
-    margin-left: -120px;
+    margin-top: 100px;
 }
 
 #score{
@@ -43,7 +44,7 @@ html, body{
 
 #rock{
     filter: invert(44%) sepia(92%) saturate(1050%) hue-rotate(189deg) brightness(101%) contrast(101%);
-    margin-left: 90px;
+    margin-left: 70px;
     margin-top: 20px;
 }
 
