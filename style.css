@@ -2,6 +2,10 @@ html, body{
     background-color: black;
 }
 
+body {
+    cursor: url('http://www.rw-designer.com/cursor-extern.php?id=161034'), auto;
+}
+
 .header{
     text-align: center;
     font-family: 'Press Start 2P';
