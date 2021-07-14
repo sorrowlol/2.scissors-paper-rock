@@ -40,7 +40,8 @@ html, body{
     font-family: 'Press Start 2P';
     text-align: center;
     margin-left: 10px;
-    bottom: 400px;
+
+
 }
 
 #START{
@@ -50,6 +51,7 @@ html, body{
         text-align: center;
         margin-left: 10px;
         margin-top: 30px;
+
 }
 
 @keyframes START {
@@ -88,4 +90,9 @@ html, body{
     color: rgb(225, 0, 255);
     padding: 10px;
     height: 100px;
+}
+
+.arny{
+    position: absolute;
+    margin-left: 100px;
 }
