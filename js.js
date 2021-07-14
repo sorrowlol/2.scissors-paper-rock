@@ -20,11 +20,14 @@ function round(playerSelection, computerSelection){
     computerSelection = computerPlay();
 
     if (playerSelection === "rock"){
+        startxx.setAttribute('style', 'display: none');
+        resultx.textContent = 'You Chose Rock';
 
         if (computerSelection === "Paper"){
             disply.textContent = `You Lose! Computer chose ${computerSelection}`
             computerwin++;
             computersc.textContent = computerwin;
+            
         }
         else if (computerSelection === "Scissors"){
             disply.textContent = `You Win! Computer chose ${computerSelection}`;
@@ -32,12 +35,16 @@ function round(playerSelection, computerSelection){
             playersc.textContent = playerwin;
         }
         else if (computerSelection === "Rock"){
+
             disply.textContent = `It's a draw! Both chose ${computerSelection}`;
         }
 
     }
 
     else if (playerSelection === "paper"){
+        startxx.setAttribute('style', 'display: none');
+        resultx.textContent = 'You Chose Paper';
+
         if (computerSelection === "Rock"){
             disply.textContent = `You Win! Computer chose ${computerSelection}`;
             playerwin++;
@@ -47,6 +54,10 @@ function round(playerSelection, computerSelection){
             disply.textContent = `You Lose! Computer chose ${computerSelection}`;
             computerwin++;
             computersc.textContent = computerwin;
+            if (computerwin === 5){
+                console.log('you win!');
+            }
+
         }
         else if (computerSelection === "Paper"){
             disply.textContent = `It's a draw! Both chose ${computerSelection}`;
@@ -55,10 +66,14 @@ function round(playerSelection, computerSelection){
     }
 
     else if (playerSelection === "scissors"){
+        startxx.setAttribute('style', 'display: none');
+        resultx.textContent = 'You Chose Scissors';
+
         if (computerSelection === "Rock"){
             disply.textContent = `You Lose! Computer chose ${computerSelection}`;
             computerwin++;
             computersc.textContent = computerwin;
+
         }
         else if (computerSelection === "Paper"){
             disply.textContent = `You Win! Computer chose ${computerSelection}`;
@@ -69,26 +84,22 @@ function round(playerSelection, computerSelection){
             disply.textContent = `It's a draw! Both chose ${computerSelection}`;
         }
     }
-    
-       if (computerwin === 5){
-        cret.textContent = `Machines always win, with ${computerwin} vs your measly ${playerwin}`;
+
+    if (computerwin === 5){
+        cret.textContent = `Machines always win, with ${computerwin}`;
         winner.appendChild(cret);
-        playerwin = 0;
-        computerwin = 0;
-        computersc.textContent = 0;
-        playersc.textContent = 0;
+    
     }
     
     else if (playerwin === 5){
         cret.textContent = `You win! with ${playerwin} vs the stupid machines ${computerwin}`;
         winner.appendChild(cret);
-        playerwin = 0;
-        computerwin = 0;
-        computersc.textContent = 0;
-        playersc.textContent = 0;
+    
     }
-
 }
+
+    
+
 
 /*
 function game() {
@@ -110,6 +121,11 @@ function game() {
 
 
 //nodelist
+
+const startxx = document.querySelector('#START');
+
+const resultx = document.querySelector('.resultsx');
+
 
 const resultsjs = document.querySelector('#results');
 const disply = document.createElement('p');
