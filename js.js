@@ -22,6 +22,7 @@ function round(playerSelection, computerSelection){
     if (playerSelection === "rock"){
         startxx.setAttribute('style', 'display: none');
         resultx.textContent = 'You Chose Rock';
+        cret.textContent = '';
 
         if (computerSelection === "Paper"){
             disply.textContent = `You Lose! Computer chose ${computerSelection}`
@@ -44,6 +45,7 @@ function round(playerSelection, computerSelection){
     else if (playerSelection === "paper"){
         startxx.setAttribute('style', 'display: none');
         resultx.textContent = 'You Chose Paper';
+        cret.textContent = '';
 
         if (computerSelection === "Rock"){
             disply.textContent = `You Win! Computer chose ${computerSelection}`;
@@ -68,6 +70,7 @@ function round(playerSelection, computerSelection){
     else if (playerSelection === "scissors"){
         startxx.setAttribute('style', 'display: none');
         resultx.textContent = 'You Chose Scissors';
+        cret.textContent = '';
 
         if (computerSelection === "Rock"){
             disply.textContent = `You Lose! Computer chose ${computerSelection}`;
@@ -85,17 +88,25 @@ function round(playerSelection, computerSelection){
         }
     }
 
-    if (computerwin === 5){
-        cret.textContent = `Machines always win, with ${computerwin}`;
-        winner.appendChild(cret);
-    
-    }
-    
-    else if (playerwin === 5){
-        cret.textContent = `You win! with ${playerwin} vs the stupid machines ${computerwin}`;
-        winner.appendChild(cret);
-    
-    }
+        if (computerwin === 5){
+            cret.textContent = `Machines always win, with ${computerwin}`;
+            winner.appendChild(cret);
+            computerwin = 0;
+            playerwin = 0;
+            playersc.textContent = 0;
+            computersc.textContent = 0;
+
+        
+        }
+        
+        else if (playerwin === 5){
+            cret.textContent = `You win! with ${playerwin} vs the stupid machines ${computerwin}`;
+            winner.appendChild(cret);
+            computerwin = 0;
+            playerwin = 0;
+            playersc.textContent = 0;
+            computersc.textContent = 0;
+        }
 }
 
     

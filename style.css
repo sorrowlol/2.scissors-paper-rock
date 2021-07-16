@@ -14,6 +14,14 @@ body {
     padding: 20px;
 }
 
+#winner{
+    text-align: center;
+    font-family: 'Press Start 2P';
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+}
+
 #player-choice{
     display: flex;
     justify-content: center;
@@ -85,7 +93,7 @@ body {
     font-family: 'Press Start 2P';
     color: rgb(225, 0, 255);
     padding: 10px;
-    height: 100px;
+    height: 20px;
 }
 
 .computer-score{
@@ -93,10 +101,6 @@ body {
     font-family: 'Press Start 2P';
     color: rgb(225, 0, 255);
     padding: 10px;
-    height: 100px;
+    height: 20px;
 }
 
-.arny{
-    position: absolute;
-    margin-left: 100px;
-}
