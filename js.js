@@ -13,6 +13,7 @@ return a;
 }
 
 let playerwin = 0, computerwin = 0;
+const startxx = document.querySelector('#START');
 
 
 function round(playerSelection, computerSelection){
@@ -107,7 +108,8 @@ function round(playerSelection, computerSelection){
             playersc.textContent = 0;
             computersc.textContent = 0;
         }
-}
+    }
+
 
     
 
@@ -133,7 +135,7 @@ function game() {
 
 //nodelist
 
-const startxx = document.querySelector('#START');
+
 
 const resultx = document.querySelector('.resultsx');
 
@@ -141,6 +143,10 @@ const resultx = document.querySelector('.resultsx');
 const resultsjs = document.querySelector('#results');
 const disply = document.createElement('p');
 resultsjs.appendChild(disply);
+
+
+
+
 
 document.getElementById('scissors').addEventListener('click', () => {
     console.log(round(document.getElementById('scissors').id, computerPlay));
